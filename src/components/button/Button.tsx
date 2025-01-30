@@ -13,10 +13,10 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       type={type}
-      className={`w-fit flex justify-center items-center border-2 rounded-none border-border text-center no-underline cursor-pointer hover:border-b-5 hover:border-r-5 transition-all duration-100 ease-in-out ${
+      className={`w-fit flex justify-center items-center text-white border-2 rounded-none border-border text-center no-underline cursor-pointer hover:border-b-5 hover:border-r-5 transition-all duration-100 ease-in-out ${
         variant === "search"
-          ? "text-white bg-black hover:bg-primary-accent p-3 hover:p-[0.655rem] min-h-[40px]"
-          : "text-black bg-primary-accent p-1 gap-x-2"
+          ? " bg-black hover:bg-primary-accent p-3 hover:p-[0.655rem] min-h-[40px]"
+          : " bg-primary-accent p-1 gap-x-2"
       }`}
     >
       {variant === "search" && <Search color="white" size={16} />}
