@@ -1,5 +1,25 @@
+@layer theme, base, components, utilities;
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
 
+/* Fonts */
 @theme {
   --font-display: "Danfo", serif;
+  --font-inter: "Inter", serif;
+}
+
+/* Colors */
+@theme {
+  --color-background: #f5d0a9;
+  --color-text: #000000;
+  --color-border: #000000;
+  --color-primary-accent: #0066ff;
+  --color-secondary-accent: #ff3b30;
+  --color-action: #ffdd00;
+  --color-neutral: #ffffff;
+}
+
+/* Spacings */
+@theme {
+  --spacing-py: 8px;
 }
