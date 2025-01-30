@@ -22,7 +22,7 @@ body {
 @media only screen and (min-width: 640px) {
   body {
     height: 100vh;
-    padding: 2rem 4%;
+    /*padding: 0 4%;*/
   }
 
   #root {
@@ -34,7 +34,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
   body {
-    padding: 2rem 8%;
+    /*padding: 0 8%;*/
   }
 
   #root {
@@ -44,7 +44,7 @@ body {
 
 @media only screen and (min-width: 1280px) {
   body {
-    padding: 2rem 10%;
+    /*padding: 0 10%;*/
   }
 
   #root {
@@ -54,7 +54,7 @@ body {
 
 @media only screen and (min-width: 1536px) {
   body {
-    padding: 2rem 10%;
+    /* padding: 0 10%;*/
   }
 
   #root {

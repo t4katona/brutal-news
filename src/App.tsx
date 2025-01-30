@@ -1,10 +1,11 @@
 import "./App.css";
 import "./index.css";
+import { Sidebar } from "./components/sidebar/Sidebar";
 
 function App() {
   return (
     <>
-      <h1 className="text-2xl font-display">Hello World</h1>
+      <Sidebar />
     </>
   );
 }
