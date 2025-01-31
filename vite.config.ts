@@ -5,4 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    proxy: {
+      "/newsapi": {
+        target: "https://newsapi.org/v2",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/newsapi/, ""),
+      },
+    },
+  },
 });
