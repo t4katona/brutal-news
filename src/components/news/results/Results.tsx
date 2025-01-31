@@ -23,8 +23,8 @@ export const Results = () => {
   }
 
   return (
-    <h2 className="flex justify-center items-center h-full">
-      Search for any news
+    <h2 className="mt-3 flex justify-center items-center h-full sm:mt-0">
+      No results
     </h2>
   );
 };
