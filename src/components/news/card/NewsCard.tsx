@@ -8,24 +8,27 @@ export const NewsCard: React.FC<Article> = ({
   title,
   description,
   publishedAt,
+  url,
 }) => {
   return (
-    <article className="w-full flex justify-start items-start flex-col gap-y-4 p-4 border-2 border-black border-solid hover:cursor-pointer hover:border-b-5 hover:border-r-5 hover:bg-white transition-all duration-100 ease-in-out">
-      <small>{sourceName}</small>
-      <img
-        src={imgSrc}
-        alt="Cover image for article"
-        className="w-full h-72 object-cover"
-      />
-      <h3 className="text-base font-medium">{title}</h3>
-      <p className="text-sm break-words h-24">{description}</p>
-      <div className="w-full flex justify-between items-center">
-        <div className="flex justify-between items-center gap-x-1">
-          <Signature color="black" size={20} />
-          <small>{author}</small>
+    <a href={url} target="_blank" rel="noreferrer">
+      <article className="w-full flex justify-start items-start flex-col gap-y-4 p-4 border-2 border-black border-solid hover:cursor-pointer hover:border-b-5 hover:border-r-5 hover:bg-white transition-all duration-100 ease-in-out">
+        <small>{sourceName}</small>
+        <img
+          src={imgSrc}
+          alt="Cover image for article"
+          className="w-full h-72 object-cover"
+        />
+        <h3 className="text-base font-medium">{title}</h3>
+        <p className="text-sm break-words h-24">{description}</p>
+        <div className="w-full flex justify-between items-center">
+          <div className="flex justify-between items-center gap-x-1">
+            <Signature color="black" size={20} />
+            {author ? <small>{author}</small> : <small>Unkown</small>}
+          </div>
+          <small>{publishedAt.slice(0, 10)}</small>
         </div>
-        <small>{publishedAt}</small>
-      </div>
-    </article>
+      </article>
+    </a>
   );
 };

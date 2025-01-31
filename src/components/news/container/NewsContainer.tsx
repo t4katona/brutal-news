@@ -24,6 +24,7 @@ export const NewsContainer = () => {
             title={article.title}
             description={article.description}
             publishedAt={article.publishedAt}
+            url={article.url}
           />
         ))}
     </div>
