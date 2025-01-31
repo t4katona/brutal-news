@@ -14,6 +14,8 @@ export const Searchbar = () => {
   async function handleSearch() {
     setIsLoading(true);
     const result = await searchFromApi(filters);
+    console.log("res: ", result);
+
     setNews(result);
     setIsLoading(false);
   }

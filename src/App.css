@@ -24,7 +24,7 @@
     padding: 0 2%;
   }
 
-  #root {
+  #root > div {
     height: 100%;
     display: grid;
     grid-template-columns: minmax(230px, 1fr) minmax(300px, 4fr);
@@ -36,7 +36,7 @@
     padding: 0 8%;
   }
 
-  #root {
+  #root > div {
     grid-template-columns: minmax(260px, 1fr) minmax(400px, 4fr);
   }
 }
@@ -46,7 +46,7 @@
     padding: 0 10%;
   }
 
-  #root {
+  #root > div {
     grid-template-columns: minmax(290px, 1fr) minmax(500px, 4fr);
   }
 }
@@ -56,7 +56,7 @@
     padding: 0 10%;
   }
 
-  #root {
+  #root > div {
     grid-template-columns: minmax(320px, 1fr) minmax(600px, 4fr);
   }
 }

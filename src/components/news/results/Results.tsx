@@ -8,7 +8,7 @@ export const Results = () => {
 
   if (news.length) {
     return (
-      <div className="w-full p-4 border-r-3 border-solid border-border">
+      <div className="w-full p-4 md:border-r-3 border-solid border-border overflow-y-auto">
         <header className="mb-4 sm:mb-6">
           <h2 className="font-bold text-xl sm:text-2xl">
             Results for

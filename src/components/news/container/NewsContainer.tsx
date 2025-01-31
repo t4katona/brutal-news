@@ -2,6 +2,8 @@ import { NewsCard } from "../card/NewsCard";
 import { useNewsStore } from "../../../hooks/useSearch.hooks";
 import { useLoader } from "../../../hooks/useLoader.hooks";
 import { Loading } from "../../loading/Loading";
+import { Article } from "../../../interfaces/Article.interfaces";
+
 export const NewsContainer = () => {
   const news = useNewsStore((state) => state.news);
   const isLoading = useLoader((state) => state.isLoading);
